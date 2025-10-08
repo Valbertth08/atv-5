@@ -12,6 +12,7 @@ function validarFormatoInput(dataStr) {
 
 function validarData(dia, mes, ano) {
   if (mes < 1 || mes > 12) return "Mês inválido!";
+  if(ano.toString().length < 4) return "Ano inválido";
   const diasMes = [31, validaAnoBissexto(ano) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
   if (dia < 1 || dia > diasMes[mes - 1]) return "Dia inválido para o mês informado!";
   return false; 
