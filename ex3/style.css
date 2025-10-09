@@ -9,7 +9,7 @@ body{
 }
 
 fieldset{
-    width: 300px;
+    width: 400px;
     height: 300px;
     background-color: rgb(182, 171, 171);
 }
@@ -30,4 +30,9 @@ form{
 }
 .button-form >button{
     padding: 5px;
+}
+.doces-salgados{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
